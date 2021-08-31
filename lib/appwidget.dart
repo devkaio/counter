@@ -1,3 +1,4 @@
+import 'package:counter/modules/counter_flutter/counter_flutter.dart';
 import 'package:counter/modules/counter_mobx/counter_mobx_page.dart';
 import 'package:counter/modules/counter_mystate/counter_mystate.dart';
 import 'package:counter/screens/counter_list.dart';
@@ -14,6 +15,7 @@ class AppWidget extends StatelessWidget {
         CounterListPage.id: (context) => CounterListPage(),
         CounterMobxPage.id: (context) => CounterMobxPage(),
         CounterMyStatePage.id: (context) => CounterMyStatePage(),
+        CounterFlutter.id: (context) => CounterFlutter(),
       },
     );
   }

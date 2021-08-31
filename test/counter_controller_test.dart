@@ -12,11 +12,4 @@ main() {
   test('validar estado inicial do controller', () {
     expect(controller.state, CounterStatus.empty);
   });
-
-  test('Validar a funação de login', () async {
-    final states = <CounterStatus>[];
-    controller.listen((state) => states.add(state));
-    await controller.increment();
-    expect(states, [CounterStatus.loading, CounterStatus.success]);
-  });
 }

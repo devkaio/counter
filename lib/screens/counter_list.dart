@@ -1,3 +1,4 @@
+import 'package:counter/modules/counter_flutter/counter_flutter.dart';
 import 'package:counter/modules/counter_mobx/counter_mobx_page.dart';
 import 'package:counter/modules/counter_mystate/counter_mystate.dart';
 import 'package:flutter/material.dart';
@@ -15,6 +16,16 @@ class CounterListPage extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           direction: Axis.vertical,
           children: [
+            Flexible(
+              fit: FlexFit.tight,
+              flex: 1,
+              child: TextButton(
+                child: Text("Flutter Counter"),
+                onPressed: () {
+                  Navigator.pushNamed(context, CounterFlutter.id);
+                },
+              ),
+            ),
             Flexible(
               fit: FlexFit.tight,
               flex: 1,
