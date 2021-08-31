@@ -1,3 +1,4 @@
+import 'package:counter/modules/counter_bloc/counter_page.dart';
 import 'package:counter/modules/counter_flutter/counter_flutter.dart';
 import 'package:counter/modules/counter_mobx/counter_mobx_page.dart';
 import 'package:counter/modules/counter_mystate/counter_mystate.dart';
@@ -59,7 +60,9 @@ class CounterListPage extends StatelessWidget {
               flex: 1,
               child: TextButton(
                 child: Text("Counter with BLoC"),
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.pushNamed(context, CounterBlocPage.id);
+                },
               ),
             ),
           ],

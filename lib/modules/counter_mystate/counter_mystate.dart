@@ -16,6 +16,7 @@ class _CounterMyStatePageState extends State<CounterMyStatePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(title: Text('Counter with MyState')),
       body: CounterStateBuilder(
         controller: controller,
         builder: (_, state) => Center(
