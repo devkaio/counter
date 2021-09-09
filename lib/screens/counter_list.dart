@@ -2,10 +2,8 @@ import 'package:counter/modules/counter_bloc/counter_page.dart';
 import 'package:counter/modules/counter_flutter/counter_flutter.dart';
 import 'package:counter/modules/counter_mobx/counter_mobx_page.dart';
 import 'package:counter/modules/counter_mystate/counter_mystate.dart';
-import 'package:counter/modules/counter_provider/controller/inc_controller.dart';
 import 'package:counter/modules/counter_provider/counter_provider.dart';
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
 
 class CounterListPage extends StatelessWidget {
   static const String id = "/counter";
